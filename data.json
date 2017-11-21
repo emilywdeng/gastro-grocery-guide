@@ -4,20 +4,20 @@
   {
    "name": "vegetables",
    "children": [
-      {"name": "Cauliflower", "size": 743},
-      {"name": "Black Beans", "size": 743},
-      {"name": "Tomatoes", "size": 743},
-      {"name": "Carrots", "size": 743},
-      {"name": "Zucchini", "size": 743}
+      {"name": "Cauliflower", "size": 743, "filter": 0},
+      {"name": "Black Beans", "size": 743, "filter": 743},
+      {"name": "Tomatoes", "size": 743, "filter": 743},
+      {"name": "Carrots", "size": 743, "filter": 743},
+      {"name": "Zucchini", "size": 743, "filter": 743}
      ]
   },
   {
    "name": "fruit",
    "children": [
-      {"name": "Cherries", "size": 743},
-      {"name": "Apples", "size": 743},
-      {"name": "Oranges", "size": 743},
-      {"name": "Lemons", "size": 743}
+      {"name": "Cherries", "size": 743, "filter": 0},
+      {"name": "Apples", "size": 743, "filter": 743},
+      {"name": "Oranges", "size": 743, "filter": 743},
+      {"name": "Lemons", "size": 743, "filter": 743}
      ]
   }
  ]
