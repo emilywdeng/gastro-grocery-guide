@@ -5,7 +5,7 @@
    "name": "vegetables",
    "children": [
       {"name": "Cauliflower", "size": 743},
-      {"name": "Black Beans", "size": 0},
+      {"name": "Black Beans", "size": 743},
       {"name": "Tomatoes", "size": 743},
       {"name": "Zucchini", "size": 743}
      ]
