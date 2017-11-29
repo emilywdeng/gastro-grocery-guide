@@ -3,41 +3,6 @@ AOS.init({
     easing: 'ease-in-out-sine'
 });
 
-jQuery.loadScript = function (url, callback) {
-    jQuery.ajax({
-        url: url,
-        dataType: 'script',
-        success: callback,
-        async: true
-    });
-}
-
-// $(document).ready(function(){
-// console.log($("#state").val());
-// //determine which JS file to load based on selection
-// //default is PA and Fall
-
-// });
-
-// $('#state').on('change', function() {
-//     //when PA is selected
-//     if ($("#state").val() === "pa") {
-//         console.log("SELECTED PA");
-//         // $("#chart-script").remove();
-//         $("#chart-script").attr("src", "nvd3-sunburst-pa-winter.js");
-//         location.reload(true);
-//     }
-//     //when CA is selected
-//     else if ($("#state").val() === "ca") {
-//         console.log("SELECTED CA");
-//         $("#chart-script").attr("src", "nvd3-sunburst-pa-fall.js");
-//     }
-//     //default
-//     else {
-
-//     }
-// })
-
 /* Mobile devices (below 768px) */
 if (screen.width < 768) {
     //get html content hidden in div

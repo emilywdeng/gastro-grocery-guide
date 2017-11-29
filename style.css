@@ -1,15 +1,13 @@
- CSS RESET */
+/*RESET*/
 
 html, body {
     width: 100%;
-    /*height: 100%;*/
 }
 
 html, body, svg {
-            margin: 0px;
-            padding: 0px;
-/*            height: 100%;*/
-        }
+    margin: 0px;
+    padding: 0px;
+}
 
 .container-fluid, h4 {
     padding: 0px;
@@ -84,9 +82,6 @@ body {
 
 .select-style select:focus {
     outline: none;
-}
-
-select option{
 }
 
 /* MENU */
@@ -261,6 +256,7 @@ p, .ul-content li {
 
 /* Medium devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+    /*background images*/
     body {
         width: 100%;
         height: 100%;
@@ -296,10 +292,6 @@ p, .ul-content li {
         padding-left: 3%;
         margin-bottom: 30%;
     }
-/*
-    .select-style {
-    margin: 4% auto;
-}*/
 
     .select-style select {
         font-size: 1vw;
@@ -328,6 +320,7 @@ p, .ul-content li {
 
 /* Large devices (large desktops, 1440px and up) */
 @media screen and (min-width: 1440px) {
+    /*background images*/
     body {
         width: 100%;
         height: 100%;
@@ -354,6 +347,7 @@ p, .ul-content li {
         fixed;
     }
 
+    /*TOP*/
     #title {
         font-size: 100px;
         text-align: left;
@@ -361,6 +355,7 @@ p, .ul-content li {
         padding-left: 3%;
     }
 
+    /*BOTTOM*/
     .blue-opacity{
         padding: 0vw 5vw 3vw 5vw;
     }
@@ -373,6 +368,7 @@ p, .ul-content li {
 
 /* Extra Large devices (large desktops, 1440px and up) */
 @media screen and (min-width: 2560px) {
+    /*background images*/
     body {
         width: 100%;
         height: 100%;
@@ -399,6 +395,7 @@ p, .ul-content li {
         fixed;
     }
 
+    /*TOP */
     #title {
         font-size: 100px;
         text-align: left;
