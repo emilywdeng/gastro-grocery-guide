@@ -20,7 +20,7 @@ if (screen.width < 992) {
         .groupColorByParent(false)
         .height(height)
         .width(width)
-        .showLabels(true)
+        .showLabels(false)
         .labelFormat(function (d){ return d.name;});
         chart.tooltip.contentGenerator(function (d) {
             if (d.data.fodmap != null) {
