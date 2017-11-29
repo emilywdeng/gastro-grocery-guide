@@ -1,0 +1,422 @@
+ CSS RESET */
+
+html, body {
+    width: 100%;
+    /*height: 100%;*/
+}
+
+html, body, svg {
+            margin: 0px;
+            padding: 0px;
+/*            height: 100%;*/
+        }
+
+.container-fluid, h4 {
+    padding: 0px;
+}
+
+/*background images*/
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #7fcfc9;
+    background-image: url(images/orange.svg),
+    url(images/pear.svg),
+    url(images/apple.svg),
+    url(images/mushroom.svg),
+    url(images/orange.svg),
+    url(images/pear.svg);
+    background-position: -5% 10%,
+    100% -3%,
+    105% 50%,
+    -2% 50%,
+    -2% 100%,
+    105% 100%;
+    background-repeat: no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+    background-size: 25%,
+    30%,
+    30%,
+    30%,
+    25%,
+    30%;
+    background-attachment: fixed,
+    fixed,
+    fixed,
+    fixed,
+    fixed,
+    fixed;
+}
+
+/*TOP CONTENT*/
+#title {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #202020;
+    font-size: 8vw;
+}
+
+.select-style {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #b4c3ca url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==")
+         no-repeat 97% 50%;
+    width: 80%;
+    margin: 4% auto;
+}
+
+.select-style select {
+    margin: 5px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    font-size: 4vw;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+select option{
+}
+
+/* MENU */
+.menu {
+    background-color: #b4c3ca;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+.menu-label {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #202020;
+    font-size: 5vw;
+    letter-spacing: 1vw;
+}
+
+.menu-label a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.menu-label a:hover {
+    color: #202020;
+    text-decoration: none;
+}
+
+#menu-container {
+overflow: auto;
+}
+
+/*BOTTOM CONTENT*/
+
+.blue-opacity {
+    background-color: #7fcfc9;
+    opacity: .9;
+    padding: 3vw 3vw 3vw 3vw;
+}
+
+.info-icon {
+    width: 40%;
+    padding-top: 3vw;
+    padding-bottom: 6vw;
+}
+
+/*hide content for larger screens*/
+.hide-div {
+    display:none;
+}
+
+.content-title {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #202020;
+    font-size: 7vw;
+    margin-bottom: 5vw;
+}
+
+p, .ul-content li {
+    font-size: 4vw;
+}
+
+/*FOOTER*/
+#copyright {
+    font-weight: 400;
+    font-size: 3vw;
+}
+
+/* In between mobile and tablet */
+@media screen and (min-width: 470px) {
+    body {
+        width: 100%;
+        height: 100%;
+        background-color: #7fcfc9;
+        background-image: url(images/orange.svg),
+        url(images/pear.svg),
+        url(images/apple.svg),
+        url(images/mushroom.svg);
+        background-position: -5% 3%,
+        105% 3%,
+        -2% 95%,
+        105% 97%;
+        background-repeat: no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat;
+        background-size: 20%,
+        30%,
+        30%,
+        30%;
+        background-attachment: fixed,
+        fixed,
+        fixed,
+        fixed;
+    }
+
+    #title {
+        text-align: left;
+        width: 50%;
+        padding-left: 3%;
+    }
+}
+
+/* Small devices (tablets, 768 and up) */
+@media screen and (min-width: 768px) {
+    /* TOP */
+    .select-style select {
+        font-size: 1.5vw;
+    }
+
+    /* MENU */
+    .menu {
+        background-color: #ffffff;
+        background-color: #b4c3ca;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+
+    .menu-label {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .menu-fixed {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 100;
+    }
+
+    #height-menu-wrapper {
+        height: 50px;
+    }
+
+    /*BOTTOM CONTENT*/
+    .info-icon {
+        width: 80%;
+        padding-top: 10vw;
+        padding-bottom: 6vw;
+    }
+
+    .content-title {
+        text-align: left;
+        font-size: 5vw;
+        margin-top: 3vw;
+    }
+
+    p, .ul-content li {
+        font-size: 2vw;
+    }
+
+    /*FOOTER*/
+    footer .menu {
+        padding:0 1vw 0 1vw;
+    }
+
+    #about-label {
+        text-align: left;
+        font-size: 1vw;
+    }
+
+    #copyright {
+        text-align: right;
+        font-size: 1vw;
+    }
+
+
+} /*End small devices*/
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    body {
+        width: 100%;
+        height: 100%;
+        background-color: #7fcfc9;
+        background-image: url(images/orange.svg),
+        url(images/pear.svg),
+        url(images/apple.svg),
+        url(images/mushroom.svg);
+        background-position: -5% -10%,
+        105% -10%,
+        -2% 110%,
+        105% 110%;
+        background-repeat: no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat;
+        background-size: 18%,
+        25%,
+        25%,
+        25%;
+        background-attachment: fixed,
+        fixed,
+        fixed,
+        fixed;
+    }
+
+    /* TOP */
+
+    #title {
+        font-size: 72px;
+        text-align: left;
+        width: 30%;
+        padding-left: 3%;
+        margin-bottom: 30%;
+    }
+/*
+    .select-style {
+    margin: 4% auto;
+}*/
+
+    .select-style select {
+        font-size: 1vw;
+    }
+
+    /* MENU */
+    .menu-label {
+        font-size: 20px;
+        letter-spacing: 2.9px;
+    }
+
+    /*BOTTOM CONTENT*/
+    .content-title {
+        font-size: 50px;
+    }
+
+    p, .ul-content li {
+        font-size: 20px;
+    }
+
+    /*FOOTER*/
+    footer .menu {
+        padding:0 2vw 0 2vw;
+    }
+} /*End medium devices*/
+
+/* Large devices (large desktops, 1440px and up) */
+@media screen and (min-width: 1440px) {
+    body {
+        width: 100%;
+        height: 100%;
+        background-color: #7fcfc9;
+        background-image: url(images/orange.svg),
+        url(images/pear.svg),
+        url(images/apple.svg),
+        url(images/mushroom.svg);
+        background-position: -3% -5%,
+                            105% -5%,
+                            -2% 103%,
+                            105% 103%;
+        background-repeat: no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat;
+        background-size: 10%,
+                        15%,
+                        15%,
+                        15%;
+        background-attachment: fixed,
+        fixed,
+        fixed,
+        fixed;
+    }
+
+    #title {
+        font-size: 100px;
+        text-align: left;
+        width: 30%;
+        padding-left: 3%;
+    }
+
+    .blue-opacity{
+        padding: 0vw 5vw 3vw 5vw;
+    }
+
+    p, .ul-content li {
+        font-size: 24px;
+    }
+
+} /*End large devices*/
+
+/* Extra Large devices (large desktops, 1440px and up) */
+@media screen and (min-width: 2560px) {
+    body {
+        width: 100%;
+        height: 100%;
+        background-color: #7fcfc9;
+        background-image: url(images/orange.svg),
+        url(images/pear.svg),
+        url(images/apple.svg),
+        url(images/mushroom.svg);
+        background-position: -3% -5%,
+                            105% -5%,
+                            -2% 103%,
+                            105% 103%;
+        background-repeat: no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat;
+        background-size: 10%,
+                        15%,
+                        15%,
+                        15%;
+        background-attachment: fixed,
+        fixed,
+        fixed,
+        fixed;
+    }
+
+    #title {
+        font-size: 100px;
+        text-align: left;
+        width: 30%;
+        padding-left: 3%;
+    }
+
+    /*BOTTOM CONTENT*/
+    .blue-opacity{
+        padding: 3vw 5vw 3vw 5vw;
+    }
+
+    .content-title {
+        font-size: 60px;
+    }
+
+    p, .ul-content li {
+        font-size: 30px;
+    }
+
+}
