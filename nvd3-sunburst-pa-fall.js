@@ -7,27 +7,35 @@ if (screen.width < 992) {
     $("#test1").height(height);
     $("#test1").width(width);
 
+    // Maintian an instance of the chart
     var chart;
 
-    //create chart without labels
+    // Maintain an Instance of the SVG selection with its data
+    var chartData;
+
+    //create chart with labels
     nv.addGraph(function() {
         chart = nv.models.sunburstChart();
-        chart.color(d3.scale.category10().range())
-        .id("pa_fall")
+        chart.color(d3.scale.category20b().range())
         .groupColorByParent(false)
         .height(height)
         .width(width)
-        .mode("value");
+        .showLabels(true)
+        .labelFormat(function (d){ return d.name;});
         chart.tooltip.contentGenerator(function (d) {
             if (d.data.fodmap != null) {
                 return "<table> <tr> <th>"+d.data.name+"</th> <th></th> </tr> <tr> <td>FODMAP: </td> <td>"+d.data.fodmap+"</td> </tr> </table>";
             }
             return "<table> <tr> <th>"+d.data.name+"</th> </tr> </table>"});
-            chart.tooltip.contentGenerator(function (d) {
-            return "HELLO WORLD!"; });
-        d3.select("#test1")
-        .datum(getData())
-        .call(chart);
+        // d3.select("#test1")
+        // .datum(getData())
+        // .call(chart);
+
+        // Assign the SVG selction
+        chartData = d3.select('#test1').datum(getData());
+        chartData.transition().duration(500).call(chart);
+
+        //update chart on window resize
         nv.utils.windowResize(chart.update);
         return chart;
     });
@@ -36,7 +44,7 @@ if (screen.width < 992) {
     var width = $("#myChart").width();
     var height = $(window).height();
 
-        //set width and height of svg
+    //set width and height of svg
     $("#test1").height(height);
     $("#test1").width(width);
 
